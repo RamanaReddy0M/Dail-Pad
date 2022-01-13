@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .row {
+    margin: 0 auto;
+    width: 200px;
+    clear: both;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .digit {
+    float: left;
+    padding: 10px 30px;
+    width: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .sub {
+    font-size: 0.8rem;
+    color: grey;
+  }
+  
+  .container {
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    margin: 30px auto;
+    height: 480px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  #output {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    height: 60px;
+    font-weight: bold;
+    color: #1976d2;
+  }
+  
+
+  .phone {
+    display: inline-block;
+    background-color: #66bb6a;
+    padding: 4px 30px;
+    margin: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .digit:active {
+    background-color: #e6e6e6;
+  }
+  
+  .phone:hover {
+    background-color: rgb(0, 128, 75);
+  }
+  

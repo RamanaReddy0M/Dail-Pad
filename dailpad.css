@@ -2,40 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 body {
     background-color: #000;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+    align-items: center;
+    background-color: white;
+    padding-top: 5px;
+    max-width: 350px;
+    min-height: 460px;
+    max-height: 430px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
   
   .row {
-    margin: 0 auto;
-    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 3px auto;
     clear: both;
     text-align: center;
     font-family: 'Roboto', sans-serif;
   }
   
   .digit {
-    float: left;
-    padding: 10px 30px;
-    width: 30px;
+    display: flex;
+    justify-content: center;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
     cursor: pointer;
   }
   
   .sub {
+    display: block;
     font-size: 0.8rem;
     color: grey;
   }
-  
-  .container {
-    background-color: white;
-    width: 320px;
-    padding: 20px;
-    margin: 30px auto;
-    height: 480px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  .circle{
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 50%;
   }
   
   #output {
@@ -50,16 +67,18 @@ body {
 
   .phone {
     display: inline-block;
+    align-self: center;
     background-color: #66bb6a;
-    padding: 4px 30px;
+    padding: 10px 30px;
     margin: 10px;
     color: white;
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  .digit:active {
+
+  .circle:active {
     background-color: #e6e6e6;
+    border-radius: 50%;
   }
   
   .phone:hover {
